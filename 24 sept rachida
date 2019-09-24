@@ -1,0 +1,73 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pkg24sept.racida;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author 752046
+ */
+public class Racida {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+         Scanner input = new Scanner(System.in);
+        
+                int a;
+        int b;
+        int sum;
+        System.out.println("Please enter the value");
+        
+         a = input.nextInt();
+          System.out.println("Please enter the value");
+         b= input.nextInt();
+        
+         sum = a + b;
+        System.out.println("the sum of " + a +  " and " + b + " is " +sum);
+        
+        
+        int DiscountRate;
+        int OriginalPrice;
+        double Tax;
+        int Saleprice;
+        int Amountsaved;
+        double TotalPrice;
+        double c;
+        c = 0.065;
+       
+        
+      
+         
+    
+        System.out.println("Enter the item name");
+        String name = input.next();
+        System.out.println("The discount is :");
+        DiscountRate = input.nextInt();
+        System.out.println(" OriginalPrice");
+   
+        OriginalPrice = input.nextInt();
+        Amountsaved =  OriginalPrice * DiscountRate/100;
+       
+        
+        Saleprice = OriginalPrice + DiscountRate/100;
+          System.out.println("The sale price is : " + Saleprice);
+        
+        
+          Tax = Saleprice * c;
+          System.out.println("The tax is : " + Tax);
+          TotalPrice = Saleprice + Tax;
+            System.out.println("Total Price is : " + TotalPrice);
+            
+            
+          
+        
+        // TODO code application logic here
+    }
+    
+}
